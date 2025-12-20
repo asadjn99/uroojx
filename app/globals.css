@@ -1,26 +1,33 @@
+
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* We define your custom design system here instead of tailwind.config.ts */
+@theme {
+  /* Custom Colors */
+  --color-primary: #1933b3;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #111217;
+  --color-surface-dark: #1c1e26;
+  --color-surface-highlight: #292c38;
+
+  /* Custom Fonts (linked to the variable in layout.tsx) */
+  --font-display: var(--font-lexend), sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom Utilities */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Force dark mode styles if needed, though v4 handles this natively */
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark text-slate-900 dark:text-white;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
