@@ -7,7 +7,7 @@ export default function WelcomePopup() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if user has already seen the popup
+    
     const hasSeenPopup = localStorage.getItem("hasSeenWelcomePopup");
     
     if (!hasSeenPopup) {
@@ -19,7 +19,7 @@ export default function WelcomePopup() {
 
   const handleClose = () => {
     setIsOpen(false);
-    // Save to localStorage so it doesn't show again
+    
     localStorage.setItem("hasSeenWelcomePopup", "true");
   };
 
@@ -39,7 +39,7 @@ export default function WelcomePopup() {
         {/* Close Button */}
         <button 
           onClick={handleClose}
-          className="absolute top-4 right-4 z-20 text-slate-400 hover:text-white transition-colors bg-black/20 hover:bg-black/50 rounded-full p-1"
+          className="absolute cursor-pointer top-4 right-4 z-20 text-slate-400 hover:text-white transition-colors bg-black/20 hover:bg-black/50 rounded-full p-1"
         >
           <span className="material-symbols-outlined text-xl">close</span>
         </button>
@@ -66,7 +66,7 @@ export default function WelcomePopup() {
 
           <h2 className="text-3xl font-bold text-white mb-2">Hi, I am Asad Ullah</h2>
           <p className="text-slate-400 text-sm leading-relaxed mb-6">
-            Welcome to <strong>UroojX</strong>! I am a passionate Web Developer and Intern at <strong>Encoder Bytes Pvt Ltd, Peshawar</strong>. 
+            Welcome to <strong>UroojX</strong>! (Lumina Academt) I am a passionate Web Developer and Intern at <strong>Encoder Bytes Pvt Ltd, Peshawar</strong>. 
             I built this E-Learning platform to share my knowledge of the MERN stack, Next.js, and modern design. 
             Lets build something amazing together.
           </p>
@@ -97,7 +97,7 @@ export default function WelcomePopup() {
 
           <button 
             onClick={handleClose}
-            className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2"
+            className="w-full cursor-pointer bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2"
           >
             Start Learning
             <span className="material-symbols-outlined text-lg">arrow_forward</span>
