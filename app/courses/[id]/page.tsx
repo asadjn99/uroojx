@@ -50,8 +50,8 @@ const coursesDB = [
   // ID 2: Graphic Design (Full Course)
   {
     id: 2,
-    title: "Adobe Illustrator Training Course (Urdu/Hindi)",
-    subtitle: "Complete Adobe Illustrator training from beginner to advanced level by GFX Mentor.",
+    title: "Graphic Design Masterclass: Photoshop, Illustrator & Figma",
+    subtitle: "Complete Adobe Graphic Design course from beginner to advanced level by GFX Mentor.",
     rating: 4.9,
     reviews: "55k+",
     students: "3.8M+",
@@ -63,7 +63,7 @@ const coursesDB = [
     initialVideoId: "vd1vRpoWC3M",
     instructor: {
       name: "Imran Ali Dina",
-      role: "GFX Mentor",
+      role: "Graphic Mentor",
       image: "https://yt3.googleusercontent.com/ytc/AIdro_m41t-j0CWsK_FQ5G5UjF76iXjXy0X9_J9_X9_X=s176-c-k-c0x00ffffff-no-rj",
       courses: 44,
       students: "3.8M+",
@@ -96,21 +96,21 @@ const coursesDB = [
 
   {
     id: 3,
-    title: "Course for testing",
-    subtitle: "🚀 COMING SOON! Join the waitlist for the ultimate full-stack web development bootcamp.",
+    title: "Testing-Course",
+    subtitle: "COMING SOON! Join the waitlist for the ultimate full-stack web development bootcamp.",
     rating: 4.8,
     reviews: "1,245",
-    students: "5,000+",
+    students: "5,00+",
     lastUpdated: "Coming Soon",
     language: "Urdu",
     price: 0.0,
     originalPrice: 0.0,
     discount: "Coming Soon",
-    initialVideoId: "ZByhs9mDtDg",
+    initialVideoId: "abuwl4nc2c8",
     instructor: {
-      name: "The Developer",
+      name: "Asad Ullah",
       role: "Lead Instructor",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      image: "/images/sir.png",
       courses: 12,
       students: "5,00+",
       bio: "I'm Asad Ullah, I'm a developer with a passion for building modern websites."
@@ -120,47 +120,47 @@ const coursesDB = [
       {
         title: "Course Overview",
         lectures: 1,
-        time: "32m",
+        time: "00:19",
         items: [
-          { title: "Course  & Roadmap", time: "032:00", type: "video", videoId: "ZByhs9mDtDg" }
+          { title: "Course  & Roadmap", time: "00:19", type: "video", videoId: "abuwl4nc2c8" }
         ]
       }
     ]
   },
 
-  {
-    id: 4,
-    title: "Course for testing",
-    subtitle: "🚀 COMING SOON! Join the waitlist for the ultimate full-stack web development bootcamp.",
-    rating: 4.8,
-    reviews: "1,245",
-    students: "5,000+",
-    lastUpdated: "Coming Soon",
-    language: "Urdu",
-    price: 0.0,
-    originalPrice: 0.0,
-    discount: "Coming Soon",
-    initialVideoId: "lW6dvZOOXlo",
-    instructor: {
-      name: "Asad Ullah",
-      role: "Lead Instructor",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      courses: 12,
-      students: "5,00+",
-      bio: "I'm Asad Ullah, I'm a developer with a passion for building modern websites."
-    },
-    learningPoints: ["HTML/CSS (Coming Soon)", "React (Coming Soon)", "Next.js (Coming Soon)", "Backend (Coming Soon)"],
-    curriculum: [
-      {
-        title: "Course Overview",
-        lectures: 1,
-        time: "32m",
-        items: [
-          { title: "Course  & Roadmap", time: "032:00", type: "video", videoId: "lW6dvZOOXlo" }
-        ]
-      }
-    ]
-  }
+  // {
+  //   id: 4,
+  //   title: "Course for testing",
+  //   subtitle: "🚀 COMING SOON! Join the waitlist for the ultimate full-stack web development bootcamp.",
+  //   rating: 4.8,
+  //   reviews: "1,245",
+  //   students: "5,000+",
+  //   lastUpdated: "Coming Soon",
+  //   language: "Urdu",
+  //   price: 0.0,
+  //   originalPrice: 0.0,
+  //   discount: "Coming Soon",
+  //   initialVideoId: "lW6dvZOOXlo",
+  //   instructor: {
+  //     name: "Asad Ullah",
+  //     role: "Lead Instructor",
+  //     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  //     courses: 12,
+  //     students: "5,00+",
+  //     bio: "I'm Asad Ullah, I'm a developer with a passion for building modern websites."
+  //   },
+  //   learningPoints: ["HTML/CSS (Coming Soon)", "React (Coming Soon)", "Next.js (Coming Soon)", "Backend (Coming Soon)"],
+  //   curriculum: [
+  //     {
+  //       title: "Course Overview",
+  //       lectures: 1,
+  //       time: "32m",
+  //       items: [
+  //         { title: "Course  & Roadmap", time: "032:00", type: "video", videoId: "lW6dvZOOXlo" }
+  //       ]
+  //     }
+  //   ]
+  // }
 ];
 
 export default function CourseDetail() {
@@ -386,8 +386,8 @@ export default function CourseDetail() {
         />
       )}
 
-      <main className="flex-grow min-h-screen bg-background-dark text-slate-300">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="grow min-h-screen bg-background-dark text-slate-300">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 relative">
             
             {/* LEFT COLUMN */}
@@ -511,7 +511,7 @@ export default function CourseDetail() {
                       <button 
                         disabled={!isCourseCompleted}
                         onClick={() => setShowCertificate(true)}
-                        className={`w-full py-3 mt-4 rounded-lg font-bold text-sm flex items-center justify-center gap-2 transition-all border ${isCourseCompleted ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-lg cursor-pointer border-transparent" : "bg-transparent border-slate-700 text-slate-500 cursor-not-allowed opacity-50"}`}
+                        className={`w-full py-3 mt-4 rounded-lg font-bold text-sm flex items-center justify-center gap-2 transition-all border ${isCourseCompleted ? "bg-linear-to-r from-amber-500 to-amber-600 text-white shadow-lg cursor-pointer border-transparent" : "bg-transparent border-slate-700 text-slate-500 cursor-not-allowed opacity-50"}`}
                       >
                         <span className="material-symbols-outlined">workspace_premium</span>
                         {isCourseCompleted ? "Download Certificate" : "Certificate Locked"}
@@ -520,7 +520,7 @@ export default function CourseDetail() {
                   ) : (
                     <div className="flex flex-col gap-4">
                         <span className="text-3xl font-bold text-white">{course.price === 0 ? "Free" : `$${course.price}`}</span>
-                        <button onClick={handleEnroll} disabled={enrolling} className="w-full h-12 bg-primary hover:bg-primary-hover text-white font-bold rounded-lg transition-all">{enrolling ? "Enrolling..." : "Enroll Now"}</button>
+                        <button onClick={handleEnroll} disabled={enrolling} className="w-full h-12 bg-primary hover:bg-primary-hover text-white font-bold rounded-lg cursor-pointer hover:bg-primary/90 transition-all">{enrolling ? "Enrolling..." : "Enroll Now"}</button>
                     </div>
                   )}
                 </div>

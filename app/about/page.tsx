@@ -93,8 +93,9 @@ export default function AboutPage() {
 
               {/* Text Side */}
               <div className="w-full lg:w-1/2">
-                <h4 className="text-primary font-bold tracking-widest uppercase mb-2">Meet the Founder</h4>
-                <h2 className="text-4xl font-black text-white mb-6">Asad Ullah <span className="font-light text-slate-500">(asadjn99)</span></h2>
+                <h4 className="text-primary font-bold tracking-widest uppercase mb-2">Meet the Founder 😆</h4>
+                <h2 className="text-4xl font-black text-white mb-6">Asad Ullah </h2>
+                {/* <span className="font-light text-slate-500">(asadjn99)</span> */}
                 
                 <div className="space-y-6 text-lg text-slate-400">
                   <p>

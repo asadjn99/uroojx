@@ -115,7 +115,7 @@ export default function Home() {
             {/* Course 1 */}
             <Link href="/courses/1">
             <div className="min-w-70 md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
-              <div className="aspect-video bg-slate-200 dark:bg-surface-highlight bg-center bg-cover relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80')" }}>
+              <div className="aspect-video bg-slate-200 dark:bg-surface-highlight bg-center bg-cover relative" style={{ backgroundImage: "url('/images/web.jpg')" }}>
                 <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Development</div>
               </div>
               <div className="p-4 flex flex-col flex-1 gap-2">
@@ -151,9 +151,9 @@ export default function Home() {
             </Link>
 
             {/* Course 3 */}
-            <Link href="/courses/4">
+            <Link href="/courses/3">
             <div className="min-w-70 md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
-              <div className="aspect-video bg-slate-200 dark:bg-surface-highlight bg-center bg-cover relative" style={{ backgroundImage: "url('/images/gd.webp')" }}>
+              <div className="aspect-video bg-slate-200 dark:bg-surface-highlight bg-center bg-cover relative" style={{ backgroundImage: "url('/images/sir.png')" }}>
                  <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Graphic Design</div>
               </div>
               <div className="p-4 flex flex-col flex-1 gap-2">

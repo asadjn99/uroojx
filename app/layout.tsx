@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
+// import Link from "next/link";
 
 const lexend = Lexend({ 
   subsets: ["latin"],
@@ -8,8 +9,8 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
-  title: "Lumina Academy: Home",
-  description: "Master new skills with Lumina Academy",
+  title: "Lumina Academy - by-asad",
+  description: "Master new skills with Uroojx",
 };
 
 export default function RootLayout({
