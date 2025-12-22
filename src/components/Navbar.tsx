@@ -92,7 +92,7 @@ export default function Navbar() {
             <nav className="hidden md:flex items-center gap-6">
               <Link href="/courses" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Courses</Link>
               <Link href="/dashboard" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Dashboard</Link>
-              <Link href="#" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Paths</Link>
+              <Link href="/verify" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Verify</Link>
               <Link href="#" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Community</Link>
             </nav>
             

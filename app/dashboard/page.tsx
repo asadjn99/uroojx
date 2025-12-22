@@ -11,15 +11,36 @@ const coursesDB = [
     id: 1,
     title: "Mastering Web Development: From Zero to Hero",
     image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
-    instructor: "The Developer",
+    instructor: "Asad Ullah",
     totalLessons: 3 // Updated to match your curriculum
   },
   {
     id: 2,
-    title: "Adobe Illustrator Training Course (Urdu/Hindi)",
+    title: "Complete Graphic Design (Urdu/Hindi)",
     image: "https://images.unsplash.com/photo-1626785774573-4b799314347d?auto=format&fit=crop&w=800&q=80",
     instructor: "Imran Ali Dina",
-    totalLessons: 5 // Updated to match your curriculum
+    totalLessons: 10 // Updated to match your curriculum
+  },
+  {
+    id: 3,
+    title: "For Testing...1",
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    instructor: "Asad Ullah",
+    totalLessons: 10 // Updated to match your curriculum
+  },
+  {
+    id: 4,
+    title: "For Testing...2",
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    instructor: "Asad Ullah",
+    totalLessons: 10 // Updated to match your curriculum
+  },
+  {
+    id: 5,
+    title: "For Testing...3",
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    instructor: "Asad Ullah",
+    totalLessons: 10 // Updated to match your curriculum
   }
 ];
 
@@ -97,7 +118,7 @@ export default async function Dashboard() {
                         {/* Certificate Button (Only if 100%) */}
                         {course.progress === 100 && (
                           <Link href={`/courses/${course.id}`}>
-                            <button className="w-full mt-3 py-2 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-500 text-xs font-bold hover:bg-amber-500/20 transition-colors flex items-center justify-center gap-2">
+                            <button className="w-full mt-3 py-2 rounded-lg bg-amber-500/10 border cursor-pointer border-amber-500/30 text-amber-500 text-xs font-bold hover:bg-amber-500/20 transition-colors flex items-center justify-center gap-2">
                               <span className="material-symbols-outlined text-[16px]">workspace_premium</span>
                               Download Certificate
                             </button>

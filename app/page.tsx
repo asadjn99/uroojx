@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Navbar />
       {/* FIX: Added 'flex-col' to stack sections vertically and fixed max-w syntax */}
-      <main className="flex flex-col w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+      <main className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
         
         {/* --- HERO SECTION --- */}
         <section className="relative">
@@ -28,7 +28,7 @@ export default function Home() {
                     <span className="material-symbols-outlined">search</span>
                   </div>
                   <input
-                    className="w-full h-full pl-12 pr-28 rounded-xl bg-white dark:bg-[#292c38] border border-slate-200 dark:border-transparent text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder-[#9ea2b7] focus:outline-none focus:ring-2 focus:ring-primary shadow-sm"
+                    className="w-full h-full pl-12 pr-28 rounded-xl bg-white dark:bg-surface-highlight border border-slate-200 dark:border-transparent text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder-[#9ea2b7] focus:outline-none focus:ring-2 focus:ring-primary shadow-sm"
                     placeholder="What do you want to learn today?"
                   />
                   <div className="absolute right-2 top-2 bottom-2">
@@ -42,7 +42,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start mt-2">
                 <span className="text-sm font-medium text-slate-500 dark:text-slate-400 py-1">Trending:</span>
                 {['Python', 'UX Design', 'Marketing', 'Business'].map((tag) => (
-                  <Link key={tag} href="#" className="px-3 py-1 rounded-full bg-slate-100 dark:bg-[#292c38] text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-primary/10 hover:text-primary dark:hover:text-white transition-colors">
+                  <Link key={tag} href="#" className="px-3 py-1 rounded-full bg-slate-100 dark:bg-surface-highlight text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-primary/10 hover:text-primary dark:hover:text-white transition-colors">
                     {tag}
                   </Link>
                 ))}
@@ -51,7 +51,7 @@ export default function Home() {
             {/* Hero Image */}
             <div className="flex-1 w-full max-w-lg lg:max-w-full">
               <div
-                className="aspect-[4/3] rounded-2xl bg-slate-200 dark:bg-[#292c38] bg-center bg-cover shadow-2xl overflow-hidden relative group"
+                className="aspect-4/3 rounded-2xl bg-slate-200 dark:bg-surface-highlight bg-center bg-cover shadow-2xl overflow-hidden relative group"
                 style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80')" }}
               >
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -104,16 +104,17 @@ export default function Home() {
         <section className="overflow-hidden">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Popular Courses</h2>
-            <Link href="#" className="text-primary font-medium hover:underline flex items-center gap-1">
+            <Link href="/courses" className="text-primary font-medium hover:underline flex items-center gap-1">
               View all <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </Link>
           </div>
           {/* Horizontal Scroll Container */}
           <div className="flex gap-6 overflow-x-auto pb-6 snap-x scrollbar-hide">
             {/* Course 1 */}
-            <div className="min-w-[280px] md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
-              <div className="aspect-video bg-slate-200 dark:bg-[#292c38] bg-center bg-cover relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Design</div>
+            <Link href="/courses/1">
+            <div className="min-w-70 md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
+              <div className="aspect-video bg-slate-200 dark:bg-surface-highlight bg-center bg-cover relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80')" }}>
+                <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Development</div>
               </div>
               <div className="p-4 flex flex-col flex-1 gap-2">
                 <div className="flex items-center justify-between">
@@ -122,15 +123,17 @@ export default function Home() {
                   </div>
                   <span className="text-primary font-bold">$19.99</span>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors line-clamp-2">Complete Web Design: from Figma to Webflow</h3>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors line-clamp-2">Complete Web Development</h3>
                 <p className="text-sm text-slate-500 dark:text-[#9ea2b7] mt-auto">By Sarah Jenkins</p>
               </div>
             </div>
+            </Link>
 
             {/* Course 2 */}
-            <div className="min-w-[280px] md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
-              <div className="aspect-video bg-slate-200 dark:bg-[#292c38] bg-center bg-cover relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80')" }}>
-                 <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Development</div>
+            <Link href="/courses/2">
+            <div className="min-w-70 md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
+              <div className="aspect-video bg-slate-200 dark:bg-surface-highlight bg-center bg-cover relative" style={{ backgroundImage: "url('/images/gd.webp')" }}>
+                 <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Graphic Design</div>
               </div>
               <div className="p-4 flex flex-col flex-1 gap-2">
                 <div className="flex items-center justify-between">
@@ -139,28 +142,32 @@ export default function Home() {
                   </div>
                   <span className="text-primary font-bold">$24.99</span>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors line-clamp-2">Python for Data Science and Machine Learning</h3>
-                <p className="text-sm text-slate-500 dark:text-[#9ea2b7] mt-auto">By Jose Portilla</p>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors line-clamp-2">Complete Graphic Design Course</h3>
+                <p className="text-sm text-slate-500 dark:text-[#9ea2b7] mt-auto">By Imran Ali Dina</p>
               </div>
             </div>
+            </Link>
 
             {/* Course 3 */}
-             <div className="min-w-[280px] md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
-              <div className="aspect-video bg-slate-200 dark:bg-[#292c38] bg-center bg-cover relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Business</div>
-                <div className="absolute top-3 right-3 bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">Best Seller</div>
+            <Link href="/courses/4">
+            <div className="min-w-70 md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
+              <div className="aspect-video bg-slate-200 dark:bg-surface-highlight bg-center bg-cover relative" style={{ backgroundImage: "url('/images/gd.webp')" }}>
+                 <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Graphic Design</div>
               </div>
               <div className="p-4 flex flex-col flex-1 gap-2">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1 text-amber-400 text-xs font-bold">
-                    <span className="material-symbols-outlined text-sm filled">star</span> 4.7 <span className="text-slate-400 font-normal">(850)</span>
+                    <span className="material-symbols-outlined text-sm filled">star</span> 4.9 <span className="text-slate-400 font-normal">(3.5k)</span>
                   </div>
-                  <span className="text-primary font-bold">$14.99</span>
+                  <span className="text-primary font-bold">$24.99</span>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors line-clamp-2">Digital Marketing Masterclass 2024</h3>
-                <p className="text-sm text-slate-500 dark:text-[#9ea2b7] mt-auto">By Phil Ebiner</p>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors line-clamp-2">Course for testing...</h3>
+                <p className="text-sm text-slate-500 dark:text-[#9ea2b7] mt-auto">By Imran Ali Dina</p>
               </div>
             </div>
+            </Link>
+
+            
           </div>
         </section>
 

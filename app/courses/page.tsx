@@ -13,10 +13,26 @@ const coursesData = [
     instructor: "The Developer",
     rating: 4.8,
     reviews: 1200,
-    price: 12.99,
-    originalPrice: 0.0,
+    price: 0.0,
+    originalPrice: 12.99,
     category: "Development",
     level: "Beginner",
+    duration: "24h 15m",
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    badge: "Bestseller",
+    badgeColor: "bg-emerald-500",
+    icon: "code",
+  },
+  {
+    id: 4,
+    title: "course For Testing..",
+    instructor: "Asad Ullah",
+    rating: 4.8,
+    reviews: 1200,
+    price: 0.0,
+    originalPrice: 12.99,
+    category: "Development",
+    level: "Beginner-Inter",
     duration: "24h 15m",
     image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
     badge: "Bestseller",
@@ -29,12 +45,12 @@ const coursesData = [
     instructor: "Sarah Jenkins",
     rating: 4.9,
     reviews: 850,
-    price: 49.99,
+    price: 0.0,
     originalPrice: 99.99,
     category: "Design",
     level: "Beginner",
     duration: "12h 30m",
-    image: "https://images.unsplash.com/photo-1626785774573-4b799314347d?auto=format&fit=crop&w=800&q=80",
+    image: "/images/gd.webp",
     icon: "brush",
   },
 ];
@@ -90,7 +106,7 @@ export default function CourseCatalog() {
       <main className="flex flex-1 flex-col md:flex-row max-w-[1600px] mx-auto w-full px-4 md:px-6 lg:px-8 py-6 gap-8 min-h-screen">
         
         {/* --- SIDEBAR FILTERS --- */}
-        <aside className="w-full md:w-1/4 lg:w-[280px] flex-shrink-0 flex flex-col gap-6">
+        <aside className="w-full md:w-1/4 lg:w-70 flex-shrink-0 flex flex-col gap-6">
           <div className="flex items-center justify-between md:hidden pb-4 border-b border-slate-200 dark:border-[#292c38]">
             <h2 className="text-xl font-bold dark:text-white">Filters</h2>
             <button className="p-2 text-primary"><span className="material-symbols-outlined">filter_list</span></button>
