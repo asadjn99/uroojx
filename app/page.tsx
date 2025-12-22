@@ -1,4 +1,4 @@
-import Navbar from "@/src/components/Navbar"; // Check if your folder is 'src/components' or just 'components'
+import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
 import Link from "next/link";
 import WelcomePopup from "@/src/components/WelcomePopup";
@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <WelcomePopup />
       <Navbar />
-      {/* FIX: Added 'flex-col' to stack sections vertically and fixed max-w syntax */}
+      
       <main className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
         
         {/* --- HERO SECTION --- */}

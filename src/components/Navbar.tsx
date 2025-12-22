@@ -93,7 +93,7 @@ export default function Navbar() {
               <Link href="/courses" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Courses</Link>
               <Link href="/dashboard" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Dashboard</Link>
               <Link href="/verify" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Verify</Link>
-              <Link href="#" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Community</Link>
+              {/* <Link href="#" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors">Community</Link> */}
             </nav>
             
             <button className="md:hidden text-slate-600 dark:text-slate-300">
