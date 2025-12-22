@@ -44,12 +44,17 @@ export default function WelcomePopup() {
           <span className="material-symbols-outlined text-xl">close</span>
         </button>
 
+
+
+
         {/* LEFT: Image Section */}
         <div className="w-full md:w-2/5 h-64 md:h-auto relative">
           <Image 
             src="/images/asad.jpg" 
             alt="Asad Ullah" 
-            className="w-full h-full object-cover"
+            width={"100"}
+            height={"100"}
+            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
           />
           {/* Gradient Overlay for Text Readability on Mobile */}
           <div className="absolute inset-0 bg-linear-to-t from-surface-dark via-transparent to-transparent md:hidden"></div>
