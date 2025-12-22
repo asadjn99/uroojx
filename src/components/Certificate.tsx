@@ -145,7 +145,7 @@ export default function Certificate({ studentName, courseName, instructor, date,
               <div className="h-8 w-px bg-slate-300"></div>
               <div className="text-left">
                 <p className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Verify At</p>
-                <p className="text-sm font-bold text-primary">lumina.com/verify</p>
+                <p className="text-sm font-bold text-primary">uroojx.netlify.app/verify</p>
               </div>
             </div>
 
