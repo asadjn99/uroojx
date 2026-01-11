@@ -151,7 +151,7 @@ export default function Home() {
             </Link>
 
             {/* Course 3 */}
-            <Link href="/courses/3">
+            {/* <Link href="/courses/3">
             <div className="min-w-70 md:min-w-[320px] snap-start bg-white dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-[#3d4052] hover:shadow-xl transition-all group cursor-pointer flex flex-col h-full">
               <div className="aspect-video bg-slate-200 dark:bg-surface-highlight bg-center bg-cover relative" style={{ backgroundImage: "url('/images/sir.png')" }}>
                  <div className="absolute top-3 left-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">Graphic Design</div>
@@ -167,7 +167,7 @@ export default function Home() {
                 <p className="text-sm text-slate-500 dark:text-[#9ea2b7] mt-auto">By Imran Ali Dina</p>
               </div>
             </div>
-            </Link>
+            </Link> */}
 
             
           </div>
