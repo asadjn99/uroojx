@@ -51,7 +51,7 @@ export default function Certificate({ studentName, courseName, instructor, date,
             </button>
             <button 
               onClick={handleDownload}
-              className="bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-400 hover:to-amber-600 text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 shadow-lg"
+              className="bg-linear-to-r from-amber-500 to-amber-700 hover:from-amber-400 hover:to-amber-600 text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 shadow-lg"
             >
               <span className="material-symbols-outlined">download</span>
               Download PDF
@@ -72,14 +72,14 @@ export default function Certificate({ studentName, courseName, instructor, date,
             </div>
 
             {/* 2. Ornamental Border */}
-            <div className="absolute inset-4 border-[4px] border-double border-slate-900 z-10"></div>
-            <div className="absolute inset-6 border-[1px] border-slate-400 z-10"></div>
+            <div className="absolute inset-4 border-4 border-double border-slate-900 z-10"></div>
+            <div className="absolute inset-6 border border-slate-400 z-10"></div>
             
             {/* Corners */}
-            <div className="absolute top-4 left-4 size-24 border-t-[8px] border-l-[8px] border-amber-600 z-20"></div>
-            <div className="absolute top-4 right-4 size-24 border-t-[8px] border-r-[8px] border-amber-600 z-20"></div>
-            <div className="absolute bottom-4 left-4 size-24 border-b-[8px] border-l-[8px] border-amber-600 z-20"></div>
-            <div className="absolute bottom-4 right-4 size-24 border-b-[8px] border-r-[8px] border-amber-600 z-20"></div>
+            <div className="absolute top-4 left-4 size-24 border-t-8 border-l-8 border-amber-600 z-20"></div>
+            <div className="absolute top-4 right-4 size-24 border-t-8 border-r-8 border-amber-600 z-20"></div>
+            <div className="absolute bottom-4 left-4 size-24 border-b-8 border-l-8 border-amber-600 z-20"></div>
+            <div className="absolute bottom-4 right-4 size-24 border-b-8 border-r-8 border-amber-600 z-20"></div>
 
             {/* 3. Header Content */}
             <div className="z-30 mt-12 mb-4">

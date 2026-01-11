@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { createClient } from "@/src/utils/supabase/server";
 import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
@@ -77,7 +78,7 @@ export default async function Dashboard() {
     <>
       <Navbar />
       <main className="min-h-screen bg-background-dark text-slate-300 py-12">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex items-center justify-between mb-8">
             <div>

@@ -22,7 +22,7 @@ export default function AboutPage() {
             </span>
             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-6 leading-tight animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
               Empowering the Next <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-400">
                 Generation of Developers
               </span>
             </h1>
@@ -36,7 +36,7 @@ export default function AboutPage() {
         <section className="max-w-7xl mx-auto px-6 pb-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="bg-[#1c1e26] border border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-colors group">
+            <div className="bg-surface-dark border border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-colors group">
               <div className="size-14 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/20 transition-colors">
                 <span className="material-symbols-outlined text-3xl text-blue-400">rocket_launch</span>
               </div>
@@ -47,7 +47,7 @@ export default function AboutPage() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-[#1c1e26] border border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-colors group">
+            <div className="bg-surface-dark border border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-colors group">
               <div className="size-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                 <span className="material-symbols-outlined text-3xl text-primary">lightbulb</span>
               </div>
@@ -58,7 +58,7 @@ export default function AboutPage() {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-[#1c1e26] border border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-colors group">
+            <div className="bg-surface-dark border border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-colors group">
               <div className="size-14 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition-colors">
                 <span className="material-symbols-outlined text-3xl text-emerald-400">groups</span>
               </div>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                 </button>
               </Link>
               <Link href="/auth">
-                <button className=" cursor-pointer px-8 py-4 bg-[#1c1e26] text-white border border-slate-700 font-bold rounded-xl hover:bg-slate-800 transition-all w-full sm:w-auto">
+                <button className=" cursor-pointer px-8 py-4 bg-surface-dark text-white border border-slate-700 font-bold rounded-xl hover:bg-slate-800 transition-all w-full sm:w-auto">
                   Join for Free
                 </button>
               </Link>
