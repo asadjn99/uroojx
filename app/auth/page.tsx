@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
-import { createClient } from "@/src/utils/supabase/client"; // Import the client
+import { createClient } from "@/src/utils/supabase/client";
 
 export default function AuthPage() {
   const [variant, setVariant] = useState<"LOGIN" | "REGISTER">("LOGIN");
